@@ -14,8 +14,10 @@ actor DBank {
     Debug.print(debug_show (currentValue));
   };
 
-  public func topDown(amount : Nat) {
-    currentValue -= amount;
-    Debug.print(debug_show (currentValue));
+  public func withdrawl(amount : Nat) {
+    if (currentValue - amount >= 0) {
+      currentValue -= amount;
+      Debug.print(debug_show (currentValue));
+    };
   };
 };
