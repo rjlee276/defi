@@ -15,9 +15,12 @@ actor DBank {
   };
 
   public func withdrawl(amount : Nat) {
-    if (currentValue - amount >= 0) {
+    let temp : Int = currentValue - amount;
+    if (temp >= 0) {
       currentValue -= amount;
       Debug.print(debug_show (currentValue));
+    } else {
+      Debug.print("Out of natural number bounds");
     };
   };
 };
