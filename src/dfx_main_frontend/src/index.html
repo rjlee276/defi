@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>dfx_main</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
   <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+    <div>
+      <span> Current Balance: $<span id="value"> </span> </span>
+    </div>
+
+    <form id="form1" action="#">
+      <label for="name">Deposit</label>
+      <input id="amount" alt="Name" type="text" />
+      <button id="submit" type="submit">Submit</button>
+
+      <label for="name">Withdraw</label>
+      <input id="amount2" alt="Name" type="text" />
+      <button id="submit2" type="submit2">Submit</button>
+    </form>
   </body>
 </html>
